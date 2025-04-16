@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .icon {
@@ -27,8 +31,8 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
-  height: 42px;
+  min-width: 42px;
+  max-height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -41,8 +45,8 @@ body {
   color: #888;
   font-weight: 400;
   font-size: 16px;
-  height: 24px;
-  width: 24px;
+  max-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,4 +70,12 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+h3 {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.buttons button {
+  margin-top: 18px;
 }
